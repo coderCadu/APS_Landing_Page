@@ -15,4 +15,8 @@ Our landing page aims to guide people to a safe electronic disposal mode that st
 - Broken Notebook or/and PC
 - General Hardware
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 179ded2f3e62645763385e8d269eb378a06da513
