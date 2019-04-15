@@ -203,7 +203,26 @@ label{
         max-width: 40%;
         margin: 0 auto 20px;
     }
+
+    /* Customize Forms */
+    #InputName, #InputEmail{
+        width: 80%;
     }
+
+    .form-bg{
+        background-color: #5a5a5a;
+        width: 70%;
+        border-radius: 20px;
+        position: relative;
+        left: 3%;
+    }
+
+    .formMove{
+        position: inherit;
+        left: 7%;
+        top: 1%;
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -250,8 +269,6 @@ label{
         line-height: 1.5;
     }
 
-    }
-
     /* Customize Forms */
     #InputName, #InputEmail{
         width: 80%;
@@ -270,3 +287,4 @@ label{
         left: 7%;
         top: 1%;
     }
+}
