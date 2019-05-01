@@ -161,8 +161,8 @@ label{
 }
 
 .logo{
-    height: 15px;
-    width: 10px;
+    height: 15px !important;
+    width: 10px !important;
 }
 
 /* RESPONSIVE CSS */
