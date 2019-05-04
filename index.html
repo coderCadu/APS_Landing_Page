@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
     <title>GreenTech</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page, GreenTech, Green IT">
-    <meta name="author" content="APS Group">
+    <!-- Definição das meta tags-->
+    <meta charset="utf-8"> <!-- Codificação para leitura dos caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta tag responsiva, ajuste da largura da viewport -->
+    <meta name="description" content="GreenTech is a company focused on the harmony of nature with technology"> <!-- Descrição da página -->
+    <meta name="author" content="APS Group"> <!-- autores da página -->
 
+    <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Style -->
     <link rel="stylesheet" href="assets/css/stylesG.css">
 
     <!-- Favicon -->
@@ -25,14 +28,15 @@
 
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
-          <!-- Button for triggering navbar -->
+          <!-- Botão para abrir a navbar (Mobile) -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
+          <!-- Logo da empresa na navbar-->
           <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="GreenTech Logo" class="logo"> GreenTech</a>
-          <!-- all navbar contents -->
+          <!-- conteúdo da navbar -->
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="index.html">Início</a></li>
@@ -47,16 +51,16 @@
 
 
 
-    <!-- Carousel -->
+    <!-- slider -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="assets/img/imagem01.jpg" alt="">
+          <img src="assets/img/imagem01.jpg" alt=""> <!-- Imagem do slider -->
           <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption"> <!-- Texto do slider -->
               <h1>Cuide de nosso país.</h1>
               <p class="lead">O Brasil é o segundo maior produtor de lixo eletrônico da América Latina. Somente em 2016 produzimos 1,5 bilhões de toneladas de lixo.</p>
-              <a class="btn btn-large btn-primary" href="#formulario">Assinar newsletter</a>
+              <a class="btn btn-large btn-primary" href="#formulario">Assinar newsletter</a> <!-- Leva para o formulário -->
             </div>
           </div>
         </div>
@@ -79,17 +83,18 @@
           </div>
         </div>
       </div>
+      <!-- Botões para mover o slider -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- end carousel -->
 
 
 
-    <!-- Marketing and featurettes -->
+    <!-- começo das featurettes -->
 
     <div class="container marketing">
 
-      <!-- START THE FEATURETTES -->
+      <!-- começo das feature. Alterna o lado do texto e o da imagem -->
       <div class="featurette">
         <img class="featurette-image pull-right" src="assets/img/feature01.png">
         <h2 class="featurette-heading">Juntos construímos um <span class="muted">futuro melhor.</span></h2>
@@ -113,7 +118,7 @@
       </div>
 
       <hr class="featurette-divider">
-      <!-- Three columns of text below the carousel (http://placehold.it/140x140) -->
+      <!-- Três colunas abaixo do slider com as pessoas que já tiveram experiências com a GreenTech -->
       <div class="row">
         <div class="span4"><!-- span4 -->
           <img class="img-circle persona" src="assets/img/pessoa1.png">
@@ -138,17 +143,19 @@
       <div class="featurette">
         <div><h3>Para saber mais sobre como harmonizar tecnologia e natureza, deixe seu email conosco</h3></div>
         <!-- form -->
+        <!-- Formulário -->
         <div class="row align-items-center form-position form-bg">
-          <form action="https://submit-form.com/VZt5u7Egr3Uf-OWQ682y2" method="POST" target="_self" id="formulario" class="formMove">
+          <form action="https://submit-form.com/VZt5u7Egr3Uf-OWQ682y2" method="POST" target="_self" id="formulario" class="formMove"> <!-- Formulário é enviado ao Formspark -->
 
-            <div class="form-group">
+            <div class="form-group"> <!-- Campo para o Nome-->
               <label for="InputName">Nome:</label>
               <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Insira o seu nome" name="Name">
             </div>
-            <div class="form-group">
+            <div class="form-group"> <!-- Campo para o Email-->
               <label for="InputEmail">Email:</label>
               <input type="email" class="form-control" id="InputEmail" placeholder="Insira o seu email" name="Email">
             </div>
+            <!-- Botão para enviar o formulário -->
             <button type="submit" class="btn btn-primary">Enviar</button>
           
           </form>
@@ -156,21 +163,21 @@
       </div>
 
       <hr class="featurette-divider">
-      <!-- END THE FEATURETTES -->
+      <!-- fim das featurettes -->
 
 
-      <!-- footer -->
+      <!-- rodapé -->
       <footer>
         <p class="pull-right"><a href="#myCarousel">Voltar ao topo</a></p>
         <p>&copy; 2019 GreenTech, Inc. &middot; <a href="#">Termos</a></p>
-      </footer><!-- end footer -->
+      </footer><!-- fim da rodapé -->
 
     </div><!-- end container -->
 
 
 
-    <!-- javascript -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Javascript/Bootstrap -->
+    <!--colocado no fim da página para carregar rapidamente -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
@@ -187,7 +194,7 @@
     <script>
       !function ($) {
         $(function(){
-          // carousel
+          // Slider
           $('#myCarousel').carousel()
         })
       }(window.jQuery)
