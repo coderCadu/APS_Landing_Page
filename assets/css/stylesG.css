@@ -3,16 +3,16 @@ body {
     color: #5a5a5a;
 }
 
-/* CUSTOMIZE THE NAVBAR */
+/* Costumizando a navbar */
 
 .navbar-wrapper {
 position: relative;
 z-index: 10;
 margin-top: 20px;
-margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+margin-bottom: -90px; /* Margin negativa para levantar o slider */
 }
 
-/* Remove border and change up box shadow for more contrast */
+/* Removendo a borda e alterando a sombra para ter mais contraste */
 .navbar .navbar-inner {
 border: 0;
 -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -21,7 +21,7 @@ border: 0;
 }
 
 .navbar .brand {
-padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+padding: 14px 20px 16px;
 font-size: 16px;
 font-weight: bold;
 text-shadow: 0 -1px 0 rgba(0,0,0,.5);
@@ -37,9 +37,9 @@ margin-top: 10px;
 
 
 
-/* CUSTOMIZE THE NAVBAR */
+/* Fim costumazação da navbar */
 
-/* Carousel base class */
+/* Carousel classe de base */
 .carousel {
 margin-bottom: 60px;
 }
@@ -87,9 +87,9 @@ margin-top: 10px;
 
 
 
-/* MARKETING CONTENT */
+/* conteúdo de marketing */
 
-/* Center align the text within the three columns below the carousel */
+/* alinhar o texto dentro das colunas abaixo do slider */
 .marketing .span4 {
 text-align: center;
 }
@@ -102,20 +102,20 @@ margin-right: 10px;
 }
 
 
-/* Featurettes */
+/* Feature */
 
 .featurette-divider {
-margin: 80px 0; /* Space out the Bootstrap <hr> more */
+margin: 80px 0;
 }
 .featurette {
-padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-overflow: hidden; /* Vertically center images part 2: clear their floats. */
+padding-top: 120px; /* centralizando verticalmente a parte das imagens */
+overflow: hidden; /* limpando os floats */
 }
 .featurette-image {
-margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+margin-top: -120px;
 }
 
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+/* Espaço nos lados dos elementos floats. */
 .featurette-image.pull-left {
 margin-right: 40px;
 }
@@ -123,7 +123,6 @@ margin-right: 40px;
 margin-left: 40px;
 }
 
-/* Thin out the marketing headings */
 .featurette-heading {
 font-size: 50px;
 font-weight: 300;
@@ -131,7 +130,7 @@ line-height: 1;
 letter-spacing: -1px;
 }
 
-/* Customize Forms */
+/* costumizando o formulário */
 #InputName, #InputEmail{
     width: 65%;
 }
