@@ -1,0 +1,412 @@
+body {
+   margin: 0px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+
+
+
+/* CUSTOMIZE THE NAVBAR */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+position: relative;
+z-index: 10;
+margin-top: 20px;
+margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+border: 0;
+-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+font-size: 16px;
+font-weight: bold;
+text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+.logobrand{
+ 
+    height: 15px !important;
+    width: 10px !important;
+
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+margin-top: 10px;
+}f
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel .container {
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+
+.carousel-caption h1,
+.carousel-caption .lead {
+box-sizing: content-box;
+text-align: justify;
+margin: 0;
+line-height: 1.25;
+color: #fff;
+text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+
+/*header of the pagine contact*/
+
+.menu-logo{
+height:20px; width: 20px; margin-right: 5px;
+}
+
+.container-contRS{
+text-align: center;
+}
+
+.box{
+min-width: 100%;
+vertical-align: middle;
+position:relative;
+}
+
+
+.contact_titl{
+top: 200px;
+left: 100px;
+width: 800Px;
+margin-bottom: 100px;
+box-sizing: content-box;
+align-items: center; 
+position: absolute;
+text-align: justify;
+line-height: 1.25;
+color: #00a;
+text-shadow: 0 1px 1px rgba(5,5,5,.4);
+}
+
+
+
+.division {
+    margin: 50px;
+}
+
+
+/*FORM CONTACT PAGE*/
+
+
+.painel_contact{
+width: 80%;
+max-width: 100%;
+display:inline-flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 500px;
+}
+
+.painel_contact h2{
+    margin-left: 50px;
+}
+
+.form-group input{ 
+    width: 300px;
+ }
+
+.form-bg-cont{
+box-sizing: content-box;
+align-items: center;
+background-color:rgba(255,255,255,1);
+width: 30%;
+margin-left: 50px;
+border-radius: 20px;
+position: relative;
+left: 3%;
+}
+.mens-cont{
+    width:300px; 
+    height:100px; 
+    resize: none; 
+    text-align: justify-all; 
+    margin-bottom: 30px;
+}
+
+.lengenda{
+margin-top: 10px;
+color: #000;
+line-height: 1.25;
+text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+
+
+
+.portal_tel_mail{
+margin-left: -500px;
+margin-top: 20px;
+margin-right: 100px;
+width: 30vw;
+float: right;
+}
+
+.RedeSoc{
+display: inline;
+height: 150px; 
+width: 150px;
+}
+
+
+/*pagina about
+............................................................  */
+
+.about_titl{
+top: 150px;
+left: 100px;
+width: 800Px;
+margin-bottom: 100px;
+box-sizing: content-box;
+align-items: center; 
+position: absolute;
+text-align: justify;
+line-height: 1.25;
+color: #fff;
+text-shadow: 0 1px 3px rgba(255,255,255,1);
+}
+
+ .fundo_top{
+        
+        width: 100%;
+        height:600px;
+        max-height: 600px;
+    }
+
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+
+.marketing h2 {
+font-weight: normal;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+
+/* Thin out the marketing headings */
+
+/* Customize Forms */
+#InputName, #InputEmail{
+
+    width: 65%;
+}
+
+
+
+.form-bg{
+    background-color: #5a5a5a;
+    width: 45%;
+    border-radius: 20px;
+    position: relative;
+    left: 3%;
+}
+
+.Move{
+    position: inherit;
+    left: 7%;
+    top: 2.5%;
+}
+
+label{
+    color: #fff;
+}
+
+/* clients photos */
+.persona{
+    height: 140px;
+    width: 140px;
+}
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+
+    .contact_titl{
+        top: 100px;
+        max-width: 800px;
+        width: 500px;
+    }
+
+/*pagine about ........................................ */
+
+ .about_titl{
+        top: 100px;
+        max-width: 800px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+
+  /*.navbar-inner {
+        margin: -20px;
+        margin-right: -20px;
+    }
+
+    */
+
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .carousel .container {
+
+    }
+   
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        text-align: justify-all;
+        font-size: 18px;
+    }
+
+
+    /* Customize Forms */
+    #InputName, #InputEmail{
+        width: 80%;
+    }
+
+    .form-bg{
+        background-color: #5a5a5a;
+        width: 70%;
+        border-radius: 20px;
+        position: relative;
+        left: 3%;
+    }
+
+    .formMove{
+        position: inherit;
+        left: 7%;
+        top: 1%;
+    }
+
+
+    /*contact page*/
+    .box{display: flex;}
+    .box img {
+
+        height: 300px;
+
+    }
+
+    
+    .erros_boostrap{
+        padding-right: 0px;
+        margin-left: -20px; 
+        padding-left: -20px;
+         }
+
+
+    .painel_contact{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact_titl{
+        display:inline-flex;
+        flex-wrap: wrap;
+        top: 50px;
+        margin-left: -8vw;
+        width: 350px;
+        font-size: 18px;
+     }
+
+
+    .portal_tel_mail{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 30px;
+        float: left;
+    }
+
+    .RedeSoc{
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+  /*  pagina about 
+  ............................................................... */
+
+  article  {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+ .subtitulos-sobre{
+    margin-right: 20px;
+    margin-left: 20px;
+ }
+
+
+    .about_titl{
+        display:inline-block;
+        top: 50px;
+        margin-left: -8vw;
+        width: 350px;
+        font-size: 18px;
+
+         }
+}
