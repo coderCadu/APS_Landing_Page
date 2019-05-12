@@ -6,128 +6,122 @@ body {
 /* Costumizando a navbar */
 
 .navbar-wrapper {
-position: relative;
-z-index: 10;
-margin-top: 20px;
-margin-bottom: -90px; /* Margin negativa para levantar o slider */
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px !important; /* Margin negativa para levantar o slider */
 }
 
-/* Removendo a borda e alterando a sombra para ter mais contraste */
+/* Removendo a borda e alterando a sombra para ter a sensação de sobreposição */
 .navbar .navbar-inner {
-border: 0;
--webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-        box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 
 .navbar .brand {
-padding: 14px 20px 16px;
-font-size: 16px;
-font-weight: bold;
-text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    padding: 14px 20px 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .navbar .nav > li > a {
-padding: 15px 20px;
+    padding: 15px 20px;
 }
 
 .navbar .btn-navbar {
-margin-top: 10px;
+    margin-top: 10px;
 }
-
-
 
 /* Fim costumazação da navbar */
 
 /* Carousel classe de base */
 .carousel {
-margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .carousel .container {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
-}
-
-.carousel-control {
-background-color: transparent;
-border: 0;
-font-size: 120px;
-margin-top: 0;
-text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .carousel .item {
-height: 500px;
+    height: 500px;
 }
 .carousel img {
-min-width: 100%;
-height: 500px;
+    min-width: 100%;
+    height: 500px;
 }
 
 .carousel-caption {
-background-color: transparent;
-position: static;
-max-width: 550px;
-padding: 0 20px;
-margin-bottom: 100px;
+    background-color: transparent;
+    position: absolute;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-bottom: 100px;
 }
 .carousel-caption h1,
 .carousel-caption .lead {
-margin: 0;
-line-height: 1.25;
-color: #fff;
-text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 .carousel-caption .btn {
-margin-top: 10px;
+    margin-top: 10px;
 }
-
-
 
 /* conteúdo de marketing */
 
 /* alinhar o texto dentro das colunas abaixo do slider */
 .marketing .span4 {
-text-align: center;
+    text-align: center;
 }
 .marketing h2 {
-font-weight: normal;
+    font-weight: normal;
 }
 .marketing .span4 p {
-margin-left: 10px;
-margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
+.span4 p{
+    text-align: left;
+}
 
 /* Feature */
 
 .featurette-divider {
-margin: 80px 0;
+    margin: 30px 0;
+    width: 300px;
+    position: relative;
+    left: 25vw;
 }
 .featurette {
-padding-top: 120px; /* centralizando verticalmente a parte das imagens */
-overflow: hidden; /* limpando os floats */
+    padding-top: 120px; /* centralizando verticalmente a parte das imagens */
+    overflow: hidden; /* limpando os floats */
 }
+
 .featurette-image {
-margin-top: -120px;
+    margin-top: -120px;
 }
 
 /* Espaço nos lados dos elementos floats. */
 .featurette-image.pull-left {
-margin-right: 40px;
+    margin-right: 40px;
 }
 .featurette-image.pull-right {
-margin-left: 40px;
+    margin-left: 40px;
 }
 
 .featurette-heading {
-font-size: 50px;
-font-weight: 300;
-line-height: 1;
-letter-spacing: -1px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 /* costumizando o formulário */
@@ -136,21 +130,24 @@ letter-spacing: -1px;
 }
 
 .form-bg{
-    background-color: #5a5a5a;
     width: 45%;
+    border: 1px solid #5a5a5a;
     border-radius: 20px;
     position: relative;
     left: 3%;
+    padding-top: 7px;
+    padding-bottom: -5px;
 }
 
 .formMove{
-    position: inherit;
+    position: relative;
     left: 7%;
-    top: 2.5%;
+    top: 3%;
 }
 
 label{
-    color: #fff;
+    color: #5a5a5a;
+    margin-bottom: -1px;
 }
 
 /* clients photos */
@@ -188,6 +185,7 @@ label{
     .featurette {
         height: auto;
         padding: 0;
+        margin-top: 95px;
     }
     .featurette-image.pull-left,
     .featurette-image.pull-right {
@@ -202,8 +200,8 @@ label{
     }
 
     .form-bg{
-        background-color: #5a5a5a;
         width: 70%;
+        border: 1px solid #5a5a5a;
         border-radius: 20px;
         position: relative;
         left: 3%;
@@ -267,8 +265,8 @@ label{
     }
 
     .form-bg{
-        background-color: #5a5a5a;
         width: 70%;
+        border: 1px solid #5a5a5a;
         border-radius: 20px;
         position: relative;
         left: 3%;
