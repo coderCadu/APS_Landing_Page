@@ -70,7 +70,7 @@ body {
 }
 
 .box{
-    min-width: 100%;
+    min-width: 100% !important;
     vertical-align: middle;
     position:relative;
 }
