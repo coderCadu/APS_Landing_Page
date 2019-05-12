@@ -1,5 +1,4 @@
 body {
-    margin: 0px;
     padding-bottom: 40px;
     color: #5a5a5a;
 }
@@ -53,6 +52,11 @@ body {
     line-height: 1.25;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .menu-logo{
@@ -130,7 +134,6 @@ body {
     margin-top: 10px;
     color: #000;
     line-height: 1.25;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
 .portal_tel_mail{
