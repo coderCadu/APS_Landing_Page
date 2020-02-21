@@ -50,15 +50,15 @@ function scss() {
 function img() {
     return src('src/assets/img/**/*.*')
         .pipe(imagemin([
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({
-            plugins: [
-                { removeViewBox: true },
-                { cleanupIDs: false },
-            ],
-        }),
-    ]))
+            // imagemin.jpegtran({ progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: true },
+                    { cleanupIDs: false },
+                ],
+            }),
+        ])) 
         .pipe(dest('dist/assets/img'));
 }
 
