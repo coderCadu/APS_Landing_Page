@@ -1,7 +1,11 @@
 {
   "name": "aps_landing_page",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp watch"
+  },
   "repository": "https://github.com/carlosedu13/APS_Landing_Page.git",
   "author": "Carlos Eduardo <carlosedu.waldorf@gmail.com>",
   "license": "MIT",
@@ -24,5 +28,13 @@
     "gulp-uglifycss": "^1.1.0",
     "regenerator-runtime": "^0.13.3",
     "sass": "^1.25.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
