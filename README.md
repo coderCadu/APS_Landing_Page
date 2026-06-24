@@ -25,15 +25,15 @@ src/
 ├── about/             # Página "Sobre"
 ├── contact/           # Página "Contato"
 └── assets/
-    ├── css/           # Estilos (Sass)
+    ├── css/           # Estilos
     ├── js/            # Scripts (Babel/ES6+)
     └── img/           # Imagens
 ```
 
 ## Tecnologias
 
-- **Gulp** — automação de build (concatenação, minificação, otimização de imagens)
-- **Sass** + **PostCSS/Autoprefixer** — estilos
+- **Webpack** — bundling, minificação e otimização de assets
+- **PostCSS/Autoprefixer** — estilos
 - **Babel** — transpilação de JavaScript
 - **Axios** — requisições HTTP
 
@@ -56,12 +56,12 @@ yarn install
 yarn dev
 ```
 
-Inicia o Gulp em modo *watch*, recompilando os arquivos automaticamente a cada alteração.
+Inicia o `webpack-dev-server` em modo desenvolvimento, recompilando os arquivos automaticamente a cada alteração e abrindo o navegador em `http://localhost:8080`.
 
 ### Build de produção
 
 ```bash
-yarn start
+yarn build
 ```
 
 Gera os arquivos otimizados (HTML, CSS e JS minificados) na pasta `dist/`.
