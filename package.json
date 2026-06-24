@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
-    "dev": "gulp watch"
+    "start": "webpack --mode production",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
   },
   "repository": "https://github.com/carlosedu13/APS_Landing_Page.git",
   "author": "Carlos Eduardo <carlosedu.waldorf@gmail.com>",
@@ -15,18 +16,20 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/runtime": "^7.24.7",
     "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.1",
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^8.57.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-svgmin": "^4.1.0",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "postcss": "^8.4.38",
-    "sass": "^1.77.6"
+    "postcss-loader": "^8.1.1",
+    "svgo": "^4.0.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-remove-empty-scripts": "^1.0.4"
   },
   "browserslist": [
     "last 2 versions",
