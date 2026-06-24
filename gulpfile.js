@@ -9,11 +9,11 @@ const {
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const postcss = require('gulp-postcss');
-const imagemin = require('gulp-imagemin');
+const svgmin = require('gulp-svgmin');
 const autoprefixer = require('autoprefixer');
 
 function js() {
@@ -47,20 +47,23 @@ function scss() {
         .pipe(dest('src/assets/css'));
 }
 
-function img() {
-    return src('src/assets/img/**/*.*')
-        .pipe(imagemin([
-            // imagemin.jpegtran({ progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
-            imagemin.svgo({
-                plugins: [
-                    { removeViewBox: true },
-                    { cleanupIDs: false },
-                ],
-            }),
-        ])) 
+function imgRaster() {
+    return src(['src/assets/img/**/*.*', '!src/assets/img/**/*.svg'])
         .pipe(dest('dist/assets/img'));
 }
+
+function imgSvg() {
+    return src('src/assets/img/**/*.svg')
+        .pipe(svgmin({
+            plugins: [
+                { name: 'removeViewBox', active: false },
+                { name: 'cleanupIds', active: false },
+            ],
+        }))
+        .pipe(dest('dist/assets/img'));
+}
+
+const img = parallel(imgRaster, imgSvg);
 
 function watchFiles(callback) {
     watch('src/assets/css/**/*.css', series(scss, css));
