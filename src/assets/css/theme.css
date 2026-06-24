@@ -1,0 +1,216 @@
+/* ==========================================================================
+   GreenTech Design System
+   Tokens de cor/tipografia/espaçamento + temas claro e escuro.
+   Carregado por último para sobrepor o Bootstrap legado.
+   ========================================================================== */
+
+:root {
+    /* Paleta de marca */
+    --gt-green-50:  #eafaf1;
+    --gt-green-100: #c9f0da;
+    --gt-green-300: #6fd99a;
+    --gt-green-500: #1fa463;
+    --gt-green-600: #168651;
+    --gt-green-700: #106b40;
+
+    /* Tipografia */
+    --gt-font-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --gt-radius-sm: 6px;
+    --gt-radius-md: 12px;
+    --gt-radius-lg: 24px;
+    --gt-transition: 200ms ease;
+
+    /* Tema claro (padrão) */
+    --gt-bg: #ffffff;
+    --gt-bg-elevated: #f6f9f7;
+    --gt-bg-overlay: rgba(20, 30, 25, .55);
+    --gt-text: #1c1f1d;
+    --gt-text-muted: #5a6660;
+    --gt-border: #e1e8e3;
+    --gt-primary: var(--gt-green-600);
+    --gt-primary-hover: var(--gt-green-700);
+    --gt-on-primary: #ffffff;
+    --gt-shadow: 0 8px 24px rgba(20, 40, 30, .08);
+    --gt-shadow-lg: 0 16px 40px rgba(20, 40, 30, .12);
+}
+
+[data-theme="dark"] {
+    --gt-bg: #111613;
+    --gt-bg-elevated: #181f1b;
+    --gt-bg-overlay: rgba(0, 0, 0, .55);
+    --gt-text: #eef3f0;
+    --gt-text-muted: #9fb0a8;
+    --gt-border: #28332d;
+    --gt-primary: var(--gt-green-300);
+    --gt-primary-hover: var(--gt-green-100);
+    --gt-on-primary: #0c1410;
+    --gt-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+    --gt-shadow-lg: 0 16px 40px rgba(0, 0, 0, .45);
+}
+
+/* Transição suave entre temas */
+html,
+body,
+.navbar-inner,
+.carousel-caption,
+.form-bg,
+.form-bg-cont,
+footer {
+    transition: background-color var(--gt-transition), color var(--gt-transition), border-color var(--gt-transition), box-shadow var(--gt-transition);
+}
+
+html,
+body {
+    background-color: var(--gt-bg);
+}
+
+body {
+    font-family: var(--gt-font-base);
+    color: var(--gt-text);
+}
+
+a {
+    color: var(--gt-primary);
+}
+a:hover,
+a:focus {
+    color: var(--gt-primary-hover);
+}
+
+hr,
+.featurette-divider,
+.division,
+.fdivision {
+    border-color: var(--gt-border);
+}
+
+/* ---------- Navbar ---------- */
+.navbar .navbar-inner {
+    background: var(--gt-bg-elevated);
+    background-image: none;
+    border: 1px solid var(--gt-border);
+    border-radius: var(--gt-radius-md);
+    box-shadow: var(--gt-shadow);
+}
+
+.navbar .brand,
+.navbar .nav > li > a {
+    color: var(--gt-text);
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li.active > a {
+    color: var(--gt-primary);
+    background: transparent;
+}
+
+/* ---------- Toggle de tema ---------- */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    float: right;
+    margin: 12px 16px 0 0;
+    padding: 6px 14px;
+    border: 1px solid var(--gt-border);
+    border-radius: var(--gt-radius-lg);
+    background: var(--gt-bg);
+    color: var(--gt-text);
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+}
+.theme-toggle:hover {
+    border-color: var(--gt-primary);
+    color: var(--gt-primary);
+}
+.theme-toggle .theme-toggle-icon {
+    font-size: 14px;
+}
+[data-theme="dark"] .theme-toggle .theme-toggle-icon--light,
+[data-theme="light"] .theme-toggle .theme-toggle-icon--dark {
+    display: none;
+}
+
+/* ---------- Carousel ---------- */
+.carousel-caption {
+    background: var(--gt-bg-overlay);
+    border-radius: var(--gt-radius-md);
+}
+
+/* ---------- Botões ---------- */
+.btn-primary,
+.btn-success {
+    background-color: var(--gt-primary);
+    background-image: none;
+    border-color: var(--gt-primary);
+    color: var(--gt-on-primary);
+    border-radius: var(--gt-radius-sm);
+    text-shadow: none;
+    box-shadow: none;
+}
+.btn-primary:hover,
+.btn-success:hover,
+.btn-primary:focus,
+.btn-success:focus {
+    background-color: var(--gt-primary-hover);
+    border-color: var(--gt-primary-hover);
+    color: var(--gt-on-primary);
+}
+
+/* ---------- Cards / featurettes ---------- */
+.featurette-heading,
+h1, h2, h3 {
+    color: var(--gt-text);
+}
+.muted,
+.lead,
+p {
+    color: var(--gt-text-muted);
+}
+
+/* ---------- Formulários ---------- */
+.form-bg,
+.form-bg-cont {
+    background: var(--gt-bg-elevated);
+    border: 1px solid var(--gt-border);
+    border-radius: var(--gt-radius-lg);
+    box-shadow: var(--gt-shadow);
+}
+
+.form-control,
+input[type="text"],
+input[type="Email"],
+input[type="email"],
+textarea {
+    background: var(--gt-bg);
+    color: var(--gt-text);
+    border: 1px solid var(--gt-border);
+    border-radius: var(--gt-radius-sm);
+}
+.form-control:focus,
+input:focus,
+textarea:focus {
+    border-color: var(--gt-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(31, 164, 99, .15);
+}
+
+label,
+.lengenda {
+    color: var(--gt-text-muted);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    border-top: 1px solid var(--gt-border);
+    padding-top: 16px;
+    color: var(--gt-text-muted);
+}
+
+/* ---------- Box / cabeçalhos internos (about / contact) ---------- */
+.about_titl,
+.contact_titl {
+    background: var(--gt-bg-overlay);
+    border-radius: var(--gt-radius-md);
+}

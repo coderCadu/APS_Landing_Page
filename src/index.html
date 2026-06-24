@@ -8,6 +8,9 @@
     <meta name="description" content="GreenTech is a company focused on the harmony of nature with technology"> <!-- Descrição da página -->
     <meta name="author" content="APS Group"> <!-- autores da página -->
 
+    <!-- Define o tema (claro/escuro) antes da pintura, evitando flash -->
+    <script>(function(){try{var t=localStorage.getItem('gt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
     <!-- Bootstrap -->
     <link href="assets/css/styles.min.css" rel="stylesheet">
     <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
@@ -36,6 +39,11 @@
           </a>
           <!-- Logo da empresa na navbar-->
           <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="GreenTech Logo" class="logo"> GreenTech</a>
+          <!-- alterna entre tema claro e escuro -->
+          <button type="button" class="theme-toggle" aria-pressed="false" aria-label="Alternar tema claro/escuro">
+            <span class="theme-toggle-icon theme-toggle-icon--light">☀️</span>
+            <span class="theme-toggle-icon theme-toggle-icon--dark">🌙</span>
+          </button>
           <!-- conteúdo da navbar -->
           <div class="nav-collapse collapse">
             <ul class="nav">
