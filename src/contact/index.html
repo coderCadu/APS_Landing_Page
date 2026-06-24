@@ -7,6 +7,9 @@
     <meta name="description" content="Landing page, GreenTech, Green IT">
     <meta name="author" content="APS Group">
 
+    <!-- Define o tema (claro/escuro) antes da pintura, evitando flash -->
+    <script>(function(){try{var t=localStorage.getItem('gt-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
     <link href="../assets/css/styles.min.css" rel="stylesheet">
     <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/stylesGcontact.css"> -->
@@ -29,6 +32,11 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="../index.html"> <img class="logobrand" src="../assets/img/favicon1.ico"  alt="GreenTech Logo">GreenTech</a>
+          <!-- alterna entre tema claro e escuro -->
+          <button type="button" class="theme-toggle" aria-pressed="false" aria-label="Alternar tema claro/escuro">
+            <span class="theme-toggle-icon theme-toggle-icon--light">☀️</span>
+            <span class="theme-toggle-icon theme-toggle-icon--dark">🌙</span>
+          </button>
           <!-- todos os conteudos do menu -->
           <div class="nav-collapse collapse">
             <ul class="nav">
