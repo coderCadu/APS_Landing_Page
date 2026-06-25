@@ -247,9 +247,11 @@ footer {
 
 .painel_contact {
     display: flex !important;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 480px;
+    max-width: 720px;
+    height: auto !important;
     margin: 0 auto;
 }
 
@@ -261,9 +263,45 @@ footer {
 .form-bg-cont {
     position: static !important;
     left: auto !important;
+    box-sizing: border-box !important;
     margin: 0 auto !important;
     width: 100%;
-    max-width: 360px;
+    max-width: 600px;
+    padding: 32px;
+}
+
+.form-bg-cont .form-group {
+    width: 100%;
+}
+
+.form-bg-cont .form-group input,
+.form-bg-cont .mens-cont {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* ---------- Contato: bloco "Outras formas de contato" + ícones ---------- */
+.portal_tel_mail {
+    float: none !important;
+    width: 100% !important;
+    max-width: 720px;
+    margin: 40px auto 0 !important;
+    text-align: center;
+}
+
+.container-contRS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-contRS .RedeSoc {
+    height: 80px;
+    width: 80px;
 }
 
 /* ---------- Navbar responsiva ---------- */
