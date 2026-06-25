@@ -214,3 +214,76 @@ footer {
     background: var(--gt-bg-overlay);
     border-radius: var(--gt-radius-md);
 }
+
+/* ---------- Centralização de divisores e formulários ---------- */
+.featurette-divider,
+.division,
+.fdivision {
+    position: static !important;
+    left: auto !important;
+    display: block;
+    width: min(300px, 80%);
+    margin: 30px auto !important;
+}
+
+.form-bg {
+    position: static !important;
+    left: auto !important;
+    float: none;
+    margin: 0 auto !important;
+}
+
+.formMove {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+}
+
+.featurette .row.form-position {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.painel_contact {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.painel_contact h2 {
+    margin-left: 0;
+    text-align: center;
+}
+
+.form-bg-cont {
+    position: static !important;
+    left: auto !important;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 360px;
+}
+
+/* ---------- Navbar responsiva ---------- */
+@media (max-width: 767px) {
+    .navbar-wrapper.container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-inner {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-collapse.collapse {
+        width: 100%;
+    }
+
+    .theme-toggle {
+        float: none;
+        margin: 8px 0;
+    }
+}
