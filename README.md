@@ -72,4 +72,6 @@ Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
-Carlos Eduardo — carlosedu.waldorf@gmail.com
+Carlos Silva — carlosedu.waldorf@gmail.com
+Thiago Marques - thiagomarques1999@gmail.com
+Kelly Moana - kellymoanabrasil@gmail.com
